@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0A092c;
+    --box: #33264a;
+    --icons: #efedf6;
+    --cross: #fd039d;
+    --circle: #38a8bc;
+    --text: #4405e4;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 14px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.spans {
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.spans .cross,
+.circle {
+    font-size: xx-large;
+    font-weight: 900;
+    color: var(--cross);
+    margin: 4px 4px;
+}
+
+.circle {
+    color: var(--circle);
+}
+
+.boxe {
+    color: var(--icons);
+    background-color: var(--box);
+    font-size: small;
+    border-radius: 4px;
+    margin: 4px 46px;
+    padding: 6px 12px;
+}
+
+.variable {
+    margin: 4px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.spans .ties {
+    text-align: center;
+    height: 34px;
+    width: 34px;
+    font-size: larger;
+    padding: 4px 6px;
+    border-radius: 3px;
+    background-color: var(--icons);
+    color: var(--box);
+}
+
+.nine-box {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    grid-auto-rows: auto;
+    margin-top: 42px;
+    margin-left: 20px;
+}
+
+.boxes {
+    background-color: var(--box);
+    margin: 8px;
+    border-radius: 6px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results {
+    height: 46px;
+    width: 60px;
+    border-radius: 4px;
+    margin: 42px 14px;
+    padding: 9px;
+    color: var(--bg);
+    text-align: center;
+    font-weight: 5400;
+    font-size: 10px;
+}
+
+#you {
+    background-color: var(--cross);
+    color: #efedf6;
+}
+
+#ties {
+    background-color: var(--icons);
+}
+
+#comp {
+    background-color: var(--circle);
+    color: #efedf6;
+}
+
+p {
+    font-size: large;
+    padding-bottom: 12px;
+}
